@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SixthActivity">
+    <ImageView
+        android:id="@+id/marhaba_background"
+        android:layout_width="412dp"
+        android:layout_height="291dp"
+        android:transitionName="background_image_transition"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/meena_background"
+        tools:targetApi="kitkat" />
+
+    <ImageView
+        android:id="@+id/down_arrow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        app:layout_constraintEnd_toEndOf="@id/marhaba_background"
+        app:layout_constraintTop_toTopOf="@id/marhaba_background"
+        android:src="@drawable/ic_down_arrow" />
+    <ScrollView
+        android:id="@+id/sixth_scrollview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/marhaba_background">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sixth_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_extra_bold"
+                android:text="Marhaba Event Center,Kano"
+                android:textSize="24sp"
+                android:textColor="@color/colorPrimary"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+                <RatingBar
+                    android:id="@+id/sixth_ratingBar"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:max="5"
+                    android:numStars="5"
+                    android:progressTint="@color/colorAccent"
+                    android:rating="4.5"
+                    android:stepSize="0.5"
+                    tools:targetApi="kitkat"/>
+                <TextView
+                    android:id="@+id/sixth_rating_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:text="4.75"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:id="@+id/sixth_rating_number2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="(591)"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/about2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/open_sans_bold"
+                android:textColor="@color/colorPrimary"
+                android:text="About"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/about_text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:alpha="0.5"
+                android:fontFamily="@font/open_sans_regular"
+                android:text="I am Aisha Kabir Umar from yusuf maitama sule university i'm studying information and communication technology
+in the department of computer science,Faculty of science."
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimary" />
+            <TextView
+                android:id="@+id/venue_type2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="Venue Type"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:id="@+id/venue_type_text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="At Marhaba Event Center,we provide both indoors and outdoors venue!"
+                android:textSize="15sp"
+                android:fontFamily="@font/open_sans_regular"/>
+            <TextView
+                android:id="@+id/type_of_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Type of view"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/open_sans_semi_bold"/>
+            <TextView
+                android:id="@+id/about_view2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/open_sans_regular"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimary"
+                android:text="Center for Information Technology (CIT) Bayero University Kano, is located at BUK newsite Gwarzo road.
+its the place where IT facilities of the university are being held."
+                android:alpha="0.5"/>
+            <Button
+                android:id="@+id/like_button2"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/custom_button"
+                android:drawableEnd="@drawable/ic_steps"
+                android:drawableRight="@drawable/ic_steps"
+                android:fontFamily="@font/open_sans_bold"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:text="M A R H A B A E V E N T"
+                android:textColor="@color/white"
+                android:textSize="18dp"/>
+            <TextView
+                android:id="@+id/faqs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/open_sans_bold"
+                android:textSize="30sp"
+                android:textColor="@color/colorPrimary"
+                android:text="FAQs"/>
+            <view class="androidx.appcompat.app.AlertController$RecycleListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </view>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_semi_bold"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimary"
+                android:text="Q1 Does Marhaba Event Provide Security?"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_light"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimary"
+                android:text="Ans: No!"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_semi_bold"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimary"
+                android:text="Q2 Does Marhaba Event Center Allows you to bring your own food?"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_light"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimary"
+                android:text="Ans Yes?"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
