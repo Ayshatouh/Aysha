@@ -50,8 +50,8 @@ public class ThirdActivity extends AppCompatActivity {
         like_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent foodActivity = new Intent(ThirdActivity.this, FoodActivity.class);
-                startActivity(foodActivity);
+                Intent seventhActivity = new Intent(ThirdActivity.this, SeventhActivity.class);
+                startActivity(seventhActivity);
             }
         });
 
